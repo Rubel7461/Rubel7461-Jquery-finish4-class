@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1d4354;
+    height: 100vh;
+}
+.keyup-event
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0;
+}
+.keyup input
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+}
+.keyup hr
+{
+    width: 100%;
+    border: 2px solid #666;
+}
+.keyup p
+{
+    font-size: 23px;
+    color: #fff;
+    padding: 0 15px;
+    margin: 0;
+}
+.keyup button {
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    padding: 0 60px;
+    height: 47px;
+    background: rgba(255,255,255, 0.05);
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+.keyup button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15),transparent);
+    transform: skew(45deg) translateX(0);
+    transition: .5s;
+}
+.keyup button:hover::before{
+    transform: skew(45deg) translateX(200px);
+    transition: .5s;
+}
+button::after {
+    content: "";
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent,rgba(255,255,255,0.15));
+    transform: skew(45deg) translate(94px);
+    transition: .5s;
+}
+.keyup button:hover::after{
+    transform: skew(45deg) translate(-200px);
+    transition: .5s;
+}
+h1.divider {
+    border: 1px solid #fff;
+}
+.keyup img
+{
+    display: none;
+}
+.show {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.show input[type="password"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    padding: 0 15px;
+}
+.show input[type="text"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    padding: 0 15px;
+}
+.show input[type="checkbox"]{
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    padding: 10px 0;
+    border-radius: 50%;
+}
+.show label {
+    color: #fff;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.key{
+    position: relative;
+}
+.nice {
+    position: absolute;
+    left: revert;
+    width: 20px;
+    height: 20px;
+    top: 32%;
+    background: red;
+    right: 9px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 50%;
+    display: none;
+}
